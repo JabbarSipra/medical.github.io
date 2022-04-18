@@ -1,0 +1,84 @@
+
+:root{
+     --main-clr:#1abc9c;
+     --clr-2:#fd9678;
+     --black:#1f2732;
+     --pclr:rgb(57, 57, 57);
+     --blk-bg:#1f2732;
+}
+.header .right img{
+     width: 50rem;
+     right: 10%;
+}
+.early-services{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     padding: 4rem 6rem;
+     gap: 2rem;
+     text-align: center;
+     margin-top: 3rem;
+}
+.early-services h2{
+     font-size: 1.4rem;
+     padding: 1rem;
+     border-radius: 10px;
+     color: var(--main-clr);
+     text-transform: capitalize;
+     transition: .5s;
+     font-weight: 500;
+     
+}
+.banner img{
+     width: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 4rem 6rem;
+     margin: auto;
+}
+.early-services .servicee{
+     box-shadow: 0 0 20px 0 rgb(219, 219, 219);
+     border-radius: 10px;
+     padding: 2rem;
+}
+.early-services .servicee img{
+     width: 17rem;
+     height: 17rem;
+     border-radius: 50%;
+     transition: .5s;
+}
+.early-services .servicee:hover.servicee img{
+     transform: rotate(360deg);
+}
+.early-services .servicee:hover.servicee h2{
+     color: var(--clr-2);
+}
+
+/* about */
+.early-about{
+     padding: 2rem 6rem;
+}
+.early-about .heading h1{
+     color: var(--black);
+     font-size: 2.5rem;
+}
+.early-about .heading .h2p{
+     margin-bottom: 2rem;
+}
+.early-about .content{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 3rem;
+}
+.early-about .content .left img{
+     width: 30rem;
+     border-top-right-radius: 50%;
+     border-bottom-left-radius: 50%;
+}
+.early-about .content .right p{
+     font-size: 1.1rem;
+     color: var(--black);
+     margin: 1rem 0;
+}
+/* about */

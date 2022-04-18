@@ -1,0 +1,158 @@
+:root{
+     --main-clr:#1abc9c;
+     --clr-2:#fd9678;
+     --black:#1f2732;
+     --pclr:rgb(57, 57, 57);
+     --blk-bg:#1f2732;
+}
+
+
+
+.header .right img{
+     width: 50rem;
+     right: -10%;
+}
+
+.bellay-about{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 3rem;
+     padding: 2rem 6rem;
+     padding-top: 4rem;
+}
+.bellay-about .left img{
+     border-radius: 10px;
+     box-shadow: 0 10px 20px 0 rgb(0 0 0 / 15%);
+}
+.bellay-about .right h1{
+     font-size: 3rem;
+     color: var(--black);
+     margin-bottom: 1rem;
+}
+.bellay-about .right p{
+     font-size: 1.1rem;
+     line-height: 1.5rem;
+     padding-bottom: 1rem;
+}
+.bellay-about .right li{
+     font-size: 1.1rem;
+     line-height: 2rem;
+}
+
+/* results */
+.results{
+     padding: 2rem 6rem;
+}
+.results .heading{
+     margin-bottom: 2.5rem;
+}
+.results .heading h1{
+     color: var(--black);
+}
+.results .content{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     align-items: center;
+     justify-content: space-between;
+     gap: 2rem;
+}
+.results .content .img{
+     overflow: hidden;
+     border-radius: 10px;
+}
+.results .content .img img{
+     width: 100%;
+     border-radius: 10px;
+     transition: .5s;
+}
+.results .content .img img:hover{
+     filter: grayscale(100%);
+     transform: scale(1.1);
+}
+/* results */
+
+/* products */
+.products{
+     padding: 2rem 6rem;
+}
+.products .heading{
+     margin-bottom: 4rem;
+     color: var(--black);
+}
+.products .products-list{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     align-items: center;
+     gap: 2rem;
+}
+.products-list .product{
+     border-radius: 10px;
+     text-align: center;
+     box-shadow: 0 0 20px 0 #eee;
+     transition: .5s;
+     cursor: pointer;
+}
+.products-list .product:hover{
+     box-shadow: 3px 3px 0 5px rgb(253 150 120 / 15%);
+
+}
+.products-list .product .details {
+     padding: 1rem;
+}
+.products-list .product .details p{
+     font-size: 1.1rem;
+     color: var(--black);
+}
+.products-list .product .details p:nth-child(2){
+     color: var(--main-clr);
+}
+.products-list .product img{
+     width: 100%;
+     border-radius: 10px;
+     height: 18rem;
+     transition: .5s;
+}
+.products-list .product img:hover{
+     filter: grayscale(100%);
+}
+/* products */
+
+.early-services{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     padding: 4rem 6rem;
+     gap: 2rem;
+     text-align: center;
+     margin-top: 3rem;
+}
+.early-services h2{
+     font-size: 1.4rem;
+     padding: 1rem;
+     border-radius: 10px;
+     color: var(--main-clr);
+     text-transform: capitalize;
+     font-weight: 500;
+     transition: .5s;
+
+}
+.early-services .servicee{
+     box-shadow: 0 0 20px 0 rgb(219, 219, 219);
+     border-radius: 10px;
+     padding: 2rem;
+     cursor: pointer;
+
+}
+.early-services .servicee img{
+     width: 17rem;
+     height: 17rem;
+     border-radius: 50%;
+     transition: .5s;
+}
+
+.early-services .servicee:hover.servicee img{
+     transform: rotate(360deg);
+}
+.early-services .servicee:hover.servicee h2{
+     color: var(--clr-2);
+}

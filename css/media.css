@@ -1,0 +1,253 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+     text-decoration: none;
+     scroll-behavior: smooth;
+}
+:root{
+     --main-clr:#1abc9c;
+     --clr-2:#fd9678;
+     --black:#1f2732;
+     --pclr:rgb(57, 57, 57);
+     --blk-bg:#1f2732;
+}
+::selection{
+     color: #fff;
+     background:var(--clr-2);
+}
+.btn{
+     font-size: 1.1rem;
+     color: #fff;
+     padding: .6rem 1rem;
+     background: var(--clr-2);
+     border-radius: 50px;
+     text-transform: capitalize;
+     box-shadow: 0px 0px 0px 4px rgb(253 150 120 / 15%);
+     transition: .5s;
+}
+.btn:hover{
+     background:var(--main-clr);
+     box-shadow: 0px 0px 0px 4px rgb(26 188 156 / 15%);
+}
+
+
+
+
+
+
+/*  */
+
+@media only screen and (max-width:1000px){
+     .menu i{
+          display: flex;
+     }
+     .navbar{
+          position: relative;
+     }
+     .navbar .btn{
+          display: none;
+     }
+     .links{
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          background:var(--clr-2);
+          width: 60%;
+          z-index: 34534534;
+          left: 0;
+          top: 100%;
+          padding: 4rem 2rem;
+          height: 100vh;
+          transform: translateX(-100%);
+          transition: .5s;
+     }
+     .links.active{
+          transform: translateX(0);
+     }
+     .navbar .center a{
+          font-size: 1.3rem;
+     }
+     
+     .navbar .center a:hover{
+          color: var(--main-clr);
+     }
+     .drop-down{
+          left: 0%;
+          top: 100%;
+          width: 100%;
+     }
+
+     .header{
+          height: auto;
+          flex-direction: column;
+     }
+     .header .left{
+          width: 100%;
+     }
+     .header .right img{
+          position: inherit;
+          width: 100%;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+     }
+     .header .right::after{
+          display: none;
+     }
+     .services{
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 1rem;
+     }
+     .about .left img{
+          width: 15rem;
+     }
+     .doctors{
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+     }
+     .why-us .achievements{
+          grid-template-columns: 1fr 1fr 1fr;
+     }
+     .contact{
+          flex-direction: column;
+     }
+     .waived-services .content{
+          grid-template-columns:  1fr 1fr 1fr;
+     }
+     .waived-services{
+          padding: 2rem ;
+     }
+     .bellay-about{
+          display: flex;
+          flex-direction: column-reverse;
+     }
+     .products .products-list{
+          grid-template-columns: 1fr 1fr;
+     }
+     .early-services{
+          grid-template-columns:  1fr 1fr;
+          gap: 2rem;
+     }
+     .early-about .content{
+          display: flex;
+          flex-direction: column;
+     }
+     
+}
+
+
+@media only screen and (max-width:780px){
+     .early-services .servicee img{
+          width: 14rem;
+          height: 14rem;
+     }
+     .results .content{
+          grid-template-columns:  1fr 1fr 1fr;
+     }
+     .services{
+          grid-template-columns: 1fr 1fr;
+     }
+     .about{
+          flex-direction: column-reverse;
+     }
+     .about .left img{
+          width: 100%;
+     }
+     .why-us .achievements{
+          grid-template-columns: 1fr 1fr;
+     }
+     .footer-contact{
+          grid-template-columns: 1fr;
+     }
+     .contact-widget h1{
+          font-size: 1.4rem;
+
+     }
+     .footer-widgets{
+          grid-template-columns: 1fr 1fr;
+     }
+     .footer-widgets h1{
+          font-size: 1.4rem;
+     }
+     .waived-services .content{
+          grid-template-columns: 1fr 1fr;
+     }
+     .waived-about{
+          flex-direction: column-reverse;
+          padding: 2rem;
+     }
+     .bellay-about .left img{
+          width: 100%;
+     }
+}
+
+
+
+@media only screen and (max-width:600PX){
+     .early-about{
+          padding: 2rem;
+     }
+     .early-services{
+          grid-template-columns: 1fr;
+     }
+     .products .products-list{
+          grid-template-columns: 1fr;
+     }
+     .results .content{
+          grid-template-columns: 1fr 1fr;
+     }
+     .navbar{
+          padding-left: 2rem;
+          padding-right: 2rem;
+     }
+     .header, .about, .top-nav, .services, .team, .why-us, .contact, .footer{
+          padding-left: 2rem;
+          padding-right: 2rem;
+     }
+     .top-nav{
+          flex-direction: column;
+     }
+     .banner img{
+          width: 100%;
+          padding: 3rem;
+     }
+}
+
+@media only screen and (max-width:450px){
+     h1{
+          font-size: 1.8rem !important;
+     }
+     .early-services{
+          padding: 2rem;
+     }
+     .bellay-about, .results, .products{
+          padding: 2rem ;
+     }
+     .waived-services .content{
+          grid-template-columns:  1fr;
+     }
+     .services, .doctors, .why-us .achievements, .footer-widgets{
+          grid-template-columns: 1fr;
+     }
+     .contact .right form input, textarea{
+          border: 1px solid #eee;
+          outline: none;
+          padding: 10px 15px;
+          border-radius: 50px;
+          width: 100%;
+          color: var(--main-clr);
+          font-size: 1rem;
+     }
+     .copyright{
+          flex-direction: column;
+          gap: 1rem;
+     }
+     .header{
+          gap: 4rem;
+     }
+     
+     
+}
+/*  */
